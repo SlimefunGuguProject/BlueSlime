@@ -22,6 +22,8 @@ public class NonPlaceableBlock extends SimpleSlimefunItem<ItemUseHandler> implem
         return PlayerRightClickEvent::cancel;
     }
 
+
+    @Override
     public boolean isDisenchantable(){
         return false;
     }

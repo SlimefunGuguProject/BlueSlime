@@ -9,7 +9,7 @@ import org.bukkit.NamespacedKey;
 public class BlueSlimeItems {
 
     public static final ItemGroup BLUESLIME_CATEGORY = new ItemGroup(new NamespacedKey(BlueSlime.getInstance(),
-            "blueslime_category"), new CustomItemStack(Material.DIAMOND));
+            "blueslime_category"), new CustomItemStack(Material.NETHER_STAR, "&9BlueSlime"));
 
     public static final SlimefunItemStack EAGLE_STAR = new SlimefunItemStack("EAGLE_STAR", Material.NETHER_STAR,
             "&7Eagle's Star", "&fMake this item to rank up to the Eagle Rank!!");
@@ -40,6 +40,9 @@ public class BlueSlimeItems {
     public static final SlimefunItemStack RAVEN_ROSE = new SlimefunItemStack("RAVEN ROSE", Material.WITHER_ROSE,
             "&7Raven Rose", "&9Make this item to rank up to the Raven Rank!!");
 
-    public static final SlimefunItemStack ICARUS_BEAACON = new SlimefunItemStack("ICARUS BEACON", Material.BEACON,
+    public static final SlimefunItemStack ICARUS_BEACON = new SlimefunItemStack("ICARUS BEACON", Material.BEACON,
             "&eIcarus Beacon", "&6Make this item to rank up to the Icarus Rank!!");
+
+    private BlueSlimeItems(){
+    }
 }

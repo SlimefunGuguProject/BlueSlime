@@ -13,14 +13,16 @@ import static io.github.thebusybiscuit.slimefun4.core.guide.SlimefunGuide.getIte
 
 public class BlueSlimeItemSetup {
 
-    private static void setup(@Nonnull BlueSlime plugin){
+    private BlueSlimeItemSetup(){
+    }
+    public static void setup(@Nonnull BlueSlime plugin){
 
-        new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.EAGLE_STAR, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
+        /*new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.EAGLE_STAR, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                 null, null, getItem(Material.NETHER_STAR),
                 null, SlimefunItems.NECROTIC_SKULL, null,
                 getItem(Material.NETHER_STAR), null, null
         }).register(plugin);
-
+        */
         new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.FIRE_POWDER, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                 null, null, getItem(Material.BLAZE_POWDER),
                 null, SlimefunItems.ESSENCE_OF_AFTERLIFE, null,
@@ -72,13 +74,14 @@ public class BlueSlimeItemSetup {
                 getItem(Material.WITHER_ROSE), null, null
         }).register(plugin);
 
-        new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.ICARUS_BEAACON, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
+        new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.ICARUS_BEACON, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                 null, null, getItem(Material.BEACON),
                 null, BlueSlimeItems.EAGLE_STAR, null,
                 getItem(Material.BEACON), null, null
         }).register(plugin);
 
     }
+
 
     private static ItemStack getItem(Material mat) {
         return new ItemStack(mat);
