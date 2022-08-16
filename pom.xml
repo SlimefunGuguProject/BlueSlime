@@ -4,8 +4,8 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>xyz.blueskiesmc</groupId>
-    <artifactId>BlueSkiesAddon</artifactId>
-    <version>1.0.0</version>
+    <artifactId>BlueSlime</artifactId>
+    <version>1.0.1</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -50,7 +50,8 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.3-R0.1-SNAPSHOT</version>
+            <version>1.18.2-R0.1-SNAPSHOT</version>
+            <type>jar</type>
             <scope>provided</scope>
         </dependency>
 
@@ -74,7 +75,7 @@
         <dependency>
             <groupId>com.github.Slimefun</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>RC-16</version>
+            <version>RC-32</version>
             <scope>provided</scope>
             <exclusions>
                 <exclusion>

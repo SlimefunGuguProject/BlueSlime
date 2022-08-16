@@ -1,8 +1,14 @@
-# BlueSkies MC: Slimefun4 Addon
-I don't know quite what I am planning to make just yet. But custom items for seasons or for Donator Ranks could prove to be useful and innovative!
+# BlueSkies MC's BlueSlime [Custom Slimefun Plugin]
 
-## Discord Server for BlueSkies MC
-This is a link to the BlueSkies Minecraft Discord Server, here you may talk to the Developer (Birdy) about the customized plugin!
-https://discord.gg/a64wXAn
+BlueSlime is a Customized Slimefun Plugin for the MC Server: BlueSkies Minecraft. This plugin will be used in addition to others, to create a fun and inviting environment for our playerbase!
+
+## Contents:
+
+## Usage:
+
+## Information and Contacts:
+[Spigot Page](https://www.spigotmc.org/members/siena.607042/)
+
+[Youtube Link](https://www.youtube.com/channel/UCyEsqmkdzKS9ZVSpUy7rFyA)
 
 

@@ -1,23 +1,24 @@
 ## CHANGE this to the name of your plugin.
-name: BlueSkiesAddon
+name: BlueSlime
 
 ## CHANGE this to your username.
-author: HopefulHummingbird
+author: BellaIngenue
 
 ## CHANGE this to a meaninful but short description of your plugin.
 description: BlueSkies Minecraft Slimefun Addon
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
-main: xyz.blueskiesmc.blueskiesaddon.BlueSkiesAddon
+main: xyz.blueskiesmc.blueskiesaddon.BlueSlime
 
 ## You can change this to link to your website or repository. You can also remove this line if you want to.
-website: https://www.blueskiesmc.xyz/home
+website: https://github.com/BellaIngenue/BlueSlime
 
 ## This is required and marks Slimefun as a plugin dependency.
-depend: [Slimefun]
+depend:
+  - Slimefun
 
 ## This value is automatically replaced by the version specified in your pom.xml file, do not change this.
 version: ${project.version}
 
 ## This is the minimum minecraft version required to run your plugin.
-api-version: 1.14
+api-version: 1.16
