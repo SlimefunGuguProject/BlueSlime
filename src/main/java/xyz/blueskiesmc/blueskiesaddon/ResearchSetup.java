@@ -17,7 +17,7 @@ public class ResearchSetup {
 
     }
 
-    public static void register(String key, int id, String name, int defaultCost, ItemStack... items){
+    private static void register(String key, int id, String name, int defaultCost, ItemStack... items){
         Research research = new Research(new NamespacedKey(BlueSlime.getInstance(), key), id, name, defaultCost);
 
         for (ItemStack item : items){

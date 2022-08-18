@@ -25,12 +25,10 @@ import javax.annotation.Nonnull;
 
 public class BlueSlime extends JavaPlugin implements SlimefunAddon {
 
-    public static BlueSlime instance;
+    private static BlueSlime instance;
 
     @Override
     public void onEnable() {
-
-        //PaperLib.suggestPaper(this);
 
         instance = this;
 

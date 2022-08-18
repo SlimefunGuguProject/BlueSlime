@@ -17,12 +17,12 @@ public class BlueSlimeItemSetup {
     }
     public static void setup(@Nonnull BlueSlime plugin){
 
-        /*new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.EAGLE_STAR, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
-                null, null, getItem(Material.NETHER_STAR),
+        new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.EAGLE_STAR, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
+                null, null, new ItemStack(Material.NETHER_STAR),
                 null, SlimefunItems.NECROTIC_SKULL, null,
-                getItem(Material.NETHER_STAR), null, null
+                new ItemStack(Material.NETHER_STAR), null, null
         }).register(plugin);
-        */
+
         new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.FIRE_POWDER, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                 null, null, getItem(Material.BLAZE_POWDER),
                 null, SlimefunItems.ESSENCE_OF_AFTERLIFE, null,

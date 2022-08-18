@@ -1,9 +1,11 @@
 package utils;
 
+import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.event.Listener;
+import org.bukkit.scheduler.BukkitTask;
 import xyz.blueskiesmc.blueskiesaddon.BlueSlime;
 
 public class Utils {
@@ -20,5 +22,14 @@ public class Utils {
     public static void registerEvents(Listener listener){
         Bukkit.getServer().getPluginManager().registerEvents(listener, BlueSlime.getInstance());
 
+    }
+
+    public static BukkitTask runSync(Runnable r, long delay) {
+
+        if (Slimefun.instance() == null || !Slimefun.instance().isEnabled()) {
+            return null;
+        }
+
+        return Bukkit.getScheduler().runTaskLater(Slimefun.instance(), r, delay);
     }
 }
