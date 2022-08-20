@@ -1,29 +1,23 @@
 package xyz.blueskiesmc.blueskiesaddon;
 
-import io.github.thebusybiscuit.slimefun4.api.researches.Research;
-import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.paperlib.PaperLib;
-import me.mrCookieSlime.CSCoreLibPlugin.general.Inventory.Item.SkullItem;
 import me.mrCookieSlime.bstats.bukkit.Metrics;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ItemStack;
+import net.milkbowl.vault.permission.Permission;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import utils.Events;
-import utils.Utils;
+import xyz.blueskiesmc.blueskiesaddon.utils.BlueListener;
+import xyz.blueskiesmc.blueskiesaddon.utils.Events;
+import xyz.blueskiesmc.blueskiesaddon.utils.Utils;
 
 import javax.annotation.Nonnull;
 
-public class BlueSlime extends JavaPlugin implements SlimefunAddon {
+import static org.bukkit.Bukkit.getServer;
+
+public class BlueSlime extends JavaPlugin implements SlimefunAddon, Listener {
 
     private static BlueSlime instance;
 
@@ -43,9 +37,9 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon {
         getLogger().info("   BlueSlime Addon   ");
         getLogger().info("-------------------------");
 
-        Utils.registerEvents(new Events());
         BlueSlimeItemSetup.setup(getInstance());
         ResearchSetup.setup();
+        Utils.registerEvents(new Events());
 
         cfg.getBoolean("options.auto-update");
 
@@ -55,6 +49,7 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon {
     public void onDisable() {
         // Logic for disabling the plugin...
         saveConfig();
+        instance = null;
     }
 
     @Override
@@ -62,6 +57,7 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon {
         // You can return a link to your Bug Tracker instead of null here
         return null;
     }
+
 
     @Nonnull
     @Override

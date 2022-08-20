@@ -15,7 +15,7 @@ public class BlueSlimeItemSetup {
 
     private BlueSlimeItemSetup(){
     }
-    public static void setup(@Nonnull BlueSlime plugin){
+    public static void setup(BlueSlime plugin){
 
         new SlimefunItem(BlueSlimeItems.BLUESLIME_CATEGORY, BlueSlimeItems.EAGLE_STAR, RecipeType.MAGIC_WORKBENCH, new ItemStack[]{
                 null, null, new ItemStack(Material.NETHER_STAR),

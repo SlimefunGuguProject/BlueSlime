@@ -1,4 +1,4 @@
-package utils;
+package xyz.blueskiesmc.blueskiesaddon.utils;
 
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import org.bukkit.Bukkit;
@@ -19,7 +19,7 @@ public class Utils {
         s.sendMessage(color("&b&l[&9BlueSlime&b&l]" + msg));
     }
 
-    public static void registerEvents(Listener listener){
+    public static void registerEvents(Events listener){
         Bukkit.getServer().getPluginManager().registerEvents(listener, BlueSlime.getInstance());
 
     }

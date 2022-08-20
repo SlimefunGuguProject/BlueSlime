@@ -5,7 +5,9 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
-import utils.ItemTags;
+import xyz.blueskiesmc.blueskiesaddon.utils.ItemTags;
+
+import javax.annotation.ParametersAreNonnullByDefault;
 
 public class BlueSlimeItems {
 
