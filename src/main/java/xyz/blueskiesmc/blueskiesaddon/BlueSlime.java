@@ -36,7 +36,7 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon, Listener {
 
         getLogger().info("--------------------------------------------------");
         getLogger().info("                BlueSlime Addon   ");
-        getLogger().info("  汉化by:SlimefunGuguProject,buiawpkgew1")
+        getLogger().info("  汉化by:SlimefunGuguProject,buiawpkgew1");
         getLogger().info("--------------------------------------------------");
 
         BlueSlimeItemSetup.setup(getInstance());
