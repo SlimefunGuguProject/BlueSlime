@@ -1,27 +1,25 @@
-# BlueSkies MC's BlueSlime [Custom Slimefun Plugin]
+# BlueSkies MC's BlueSlime [自定义 Slimefun 插件]
 
-BlueSlime is a Customized Slimefun Plugin for the MC Server: BlueSkies Minecraft. 
-This plugin will be used in addition to others, to create a fun and inviting environment 
-for our playerbase!
+蓝史莱姆是一个自定义的 MC 服务器的 Slimefun 插件：BlueSkies Minecraft。 此插件将用于其他插件以为我们的玩家创建一个有趣的环境 ！
 
 ![](https://github.com/BellaIngenue/BlueSlime/blob/master/BSImage.png?raw=true)
 
-## Download:
-[![Build Status](https://github.com/BellaIngenue/BlueSlime/blob/master/badge.svg?raw=true)](https://github.com/BellaIngenue/BlueSlime)
+## 下载:
+[![编译状态](https://github.com/BellaIngenue/BlueSlime/blob/master/badge.svg?raw=true)](https://github.com/BellaIngenue/BlueSlime)
 
-## Information:
-For information, and guidance, check out the Documentation and Features!!
+## 注意：
+欲了解信息和指导，请查看文档和功能！
 
-## Features:
-* Slimefun Challenges that allow Players to craft Items to Rank-Up!
-* Fun Combination of Slimefun, LuckPerms, and CMI Ranks!!
+## 特点：
+* 允许玩家制作物品到排名的Slimefun挑战！
+* 有趣的 Slimefon, LuckPerms 和 CMI Ranks！！
 
-## Information and Contacts:
+## 信息和联系方式：
 [Bella's Spigot Page](https://www.spigotmc.org/members/siena.607042/)
 
-[BlueSkies MC's Website Link](https://www.blueskiesmc.xyz/home)
+[BlueSkies MC网站链接](https://www.blueskiesmc.xyz/home)
 
-[BlueSkies MC's Youtube Link](https://www.youtube.com/channel/UCyEsqmkdzKS9ZVSpUy7rFyA)
+[BlueSkies MC的Youtube链接](https://www.youtube.com/channel/UCyEsqmkdzKS9ZVSpUy7rFyA)
 
 
 
