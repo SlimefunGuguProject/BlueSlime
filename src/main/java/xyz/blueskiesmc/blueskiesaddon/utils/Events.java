@@ -37,14 +37,14 @@ public class Events implements Listener {
         SlimefunItem sfItem = SlimefunItem.getByItem(item);
         Player player = e.getPlayer();
         User user = api.getPlayerAdapter(Player.class).getUser(player);
-        getLogger().info("What item is this? "+ item);
-        getLogger().info("What sfItem is this? "+ sfItem);
-        getLogger().info("Who is holding this? "+ user);
+        getLogger().info("这是什么项目? "+ item);
+        getLogger().info("这是什么sfItem? "+ sfItem);
+        getLogger().info("谁拿着这个? "+ user);
         if (sfItem != null) {
             if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.EAGLE_STAR, true)){
                 e.useItem();
                 addPermission(user, "slimefun.eagle");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.EAGLE_STAR, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -55,7 +55,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.AIR_ROD, true)){
                 e.useItem();
                 addPermission(user, "slimefun.air");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.AIR_ROD, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -66,7 +66,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.WATER_ORB, true)){
                 e.useItem();
                 addPermission(user, "slimefun.water");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.WATER_ORB, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -77,7 +77,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.EARTH_FLOWER, true)){
                 e.useItem();
                 addPermission(user, "slimefun.earth");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.EARTH_FLOWER, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -88,7 +88,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.FIRE_POWDER, true)){
                 e.useItem();
                 addPermission(user, "slimefun.phoenix");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.FIRE_POWDER, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -99,7 +99,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.PHOENIX_WART, true)){
                 e.useItem();
                 addPermission(user, "slimefun.phoenix");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.PHOENIX_WART, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -110,7 +110,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.SIREN_LETTER, true)){
                 e.useItem();
                 addPermission(user, "slimefun.siren");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.SIREN_LETTER, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -121,7 +121,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.ROC_HEAD, true)){
                 e.useItem();
                 addPermission(user, "slimefun.roc");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.ROC_HEAD, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -132,7 +132,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.CAL_LEAF, true)){
                 e.useItem();
                 addPermission(user, "slimefun.caladrius");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.CAL_LEAF, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -143,7 +143,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.RAVEN_ROSE, true)){
                 e.useItem();
                 addPermission(user, "slimefun.raven");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.RAVEN_ROSE, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -154,7 +154,7 @@ public class Events implements Listener {
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.ICARUS_BEACON, true)){
                 e.useItem();
                 addPermission(user, "slimefun.icarus");
-                getLogger().info("Slimefun Permission Passed");
+                getLogger().info("Slimefun权限已通过");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.ICARUS_BEACON, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
                 }
@@ -163,11 +163,11 @@ public class Events implements Listener {
                 }
             }
             else{
-                getLogger().info("No Permission Added");
+                getLogger().info("未添加权限");
             }
         }
         else{
-            getLogger().info("This Object is Null");
+            getLogger().info("此对象为空");
         }
     }
 
@@ -180,7 +180,7 @@ public class Events implements Listener {
             api.getUserManager().saveUser(user);
         }
         else {
-            getLogger().info("User is Null");
+            getLogger().info("用户为空");
         }
     }
 

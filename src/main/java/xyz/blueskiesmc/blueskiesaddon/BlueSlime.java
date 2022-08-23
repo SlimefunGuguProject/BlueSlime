@@ -34,9 +34,10 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon, Listener {
             GuizhanBuildsUpdaterWrapper.start(this, getFile(), "SlimefunGuguProject", "BlueSlime", "master", false);
         }
 
-        getLogger().info("-------------------------");
-        getLogger().info("   BlueSlime Addon   ");
-        getLogger().info("-------------------------");
+        getLogger().info("--------------------------------------------------");
+        getLogger().info("                BlueSlime Addon   ");
+        getLogger().info("  汉化by:SlimefunGuguProject,buiawpkgew1")
+        getLogger().info("--------------------------------------------------");
 
         BlueSlimeItemSetup.setup(getInstance());
         ResearchSetup.setup();
