@@ -37,9 +37,9 @@ public class Events implements Listener {
         SlimefunItem sfItem = SlimefunItem.getByItem(item);
         Player player = e.getPlayer();
         User user = api.getPlayerAdapter(Player.class).getUser(player);
-        getLogger().info("What item is this? "+ item);
-        getLogger().info("What sfItem is this? "+ sfItem);
-        getLogger().info("Who is holding this? "+ user);
+        // getLogger().info("What item is this? "+ item);
+        // getLogger().info("What sfItem is this? "+ sfItem);
+        // getLogger().info("Who is holding this? "+ user);
         if (sfItem != null) {
             if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.EAGLE_STAR, true)){
                 e.useItem();
@@ -87,7 +87,7 @@ public class Events implements Listener {
             }
             else if (SlimefunUtils.isItemSimilar(item, BlueSlimeItems.FIRE_POWDER, true)){
                 e.useItem();
-                addPermission(user, "slimefun.phoenix");
+                addPermission(user, "slimefun.fire");
                 getLogger().info("Slimefun Permission Passed");
                 if(SlimefunUtils.isItemSimilar(player.getInventory().getItemInMainHand(), BlueSlimeItems.FIRE_POWDER, true)){
                     player.getInventory().getItemInMainHand().setAmount(player.getInventory().getItemInMainHand().getAmount() - 1);
@@ -162,12 +162,6 @@ public class Events implements Listener {
                     player.getInventory().getItemInOffHand().setAmount(player.getInventory().getItemInOffHand().getAmount()-1);
                 }
             }
-            else{
-                getLogger().info("No Permission Added");
-            }
-        }
-        else{
-            getLogger().info("This Object is Null");
         }
     }
 
