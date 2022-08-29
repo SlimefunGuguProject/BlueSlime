@@ -16,7 +16,7 @@ public class Utils {
     }
 
     public static void send(CommandSender s, String msg){
-        s.sendMessage(color("&b&l[&9BlueSlime&b&l]" + msg));
+        s.sendMessage(color("&b&l[&9蓝色粘液&b&l]" + msg));
     }
 
     public static void registerEvents(Events listener){
