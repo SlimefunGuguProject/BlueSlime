@@ -12,6 +12,7 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import xyz.blueskiesmc.blueskiesaddon.utils.BlueListener;
 import xyz.blueskiesmc.blueskiesaddon.utils.Events;
 import xyz.blueskiesmc.blueskiesaddon.utils.Utils;
+import net.guizhanss.guizhanlibplugin.updater.GuizhanBuildsUpdaterWrapper;
 
 import javax.annotation.Nonnull;
 
@@ -29,13 +30,14 @@ public class BlueSlime extends JavaPlugin implements SlimefunAddon, Listener {
         Config cfg = new Config(this);
 
         //final Metrics metrics = new Metrics(this, 69420);
-        if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
-            new GitHubBuildsUpdater(this, getFile(), "BellaIngenue/BlueSlime/master/").start();
+        if (getConfig().getBoolean("auto-update", true) && getDescription().getVersion().startsWith("Build")) {
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "SlimefunGuguProject", "BlueSlime", "master", false);
         }
 
-        getLogger().info("-------------------------");
-        getLogger().info("   BlueSlime Addon   ");
-        getLogger().info("-------------------------");
+        getLogger().info("--------------------------------------------------");
+        getLogger().info("                BlueSlime Addon   ");
+        getLogger().info("  汉化by:SlimefunGuguProject,buiawpkgew1");
+        getLogger().info("--------------------------------------------------");
 
         BlueSlimeItemSetup.setup(getInstance());
         ResearchSetup.setup();
